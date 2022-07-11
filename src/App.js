@@ -3,10 +3,10 @@ import Navbar from './Navbar'; //*importing Navbar from Navbar.js
 import Home from './Home';
 //"npm run start" -to run the project
 function App() {
-  const title ='Welcome to the new Blog';//constant variable
-  const likes = 50; //constant variable
-  // const person = {name:'isuru'} object
-  const link = "https://www.youtube.com";
+  // const title ='Welcome to the new Blog';//constant variable
+  // const likes = 50; //constant variable
+  // // const person = {name:'isuru'} object
+  // const link = "https://www.youtube.com";
 
   return (
     <div className="App">
