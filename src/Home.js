@@ -2,14 +2,14 @@ import { useState } from "react"; //use state hook
 
 const Home = () => {
     // let name = 'mario'
-   const[name,setName] = useState('mario'); // array to store the values 
-   const[age, setAge] = useState(20);
+//    const[name,setName] = useState('mario'); // array to store the values /userstate hook
+//    const[age, setAge] = useState(20);
     
 
-    const handleClick = () => {
-        setName('luigi');
-        setAge(30);
-    }
+//     const handleClick = () => {
+//         setName('luigi');
+//         setAge(30);
+//     }
 
     // const handleClick = (e) => {
     //     console.log('Hello Isuru' , e);
@@ -31,8 +31,8 @@ const Home = () => {
     <div className="Home">
         <h2>Homepage</h2>
         {/* <p>{name1}</p> */}
-        <p>{name} is {age} years old</p>
-        <button onClick={handleClick}>Click me</button> 
+        {/* <p>{name} is {age} years old</p>
+        <button onClick={handleClick}>Click me</button>  */}
         {/* <button onClick={(e) => handleClickAgain('Sam', e)}>Click me again</button>
         <button onClick={handleClickChangename}>Click me ch</button> */} 
     </div> 
