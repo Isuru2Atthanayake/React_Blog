@@ -1,8 +1,5 @@
 const BlogList = ({blogsprop, tittleprop, handleDelete}) => {
-    // const blogs = props.blogsprop; // linking the blogsprop to this page
-    // const title = props.tittleprop;
-    //const handleDelete = props.handleDelete;
-    // console.log(props,blogs); // logging in to the console
+    
 
     return (
         <div className="blogList">
