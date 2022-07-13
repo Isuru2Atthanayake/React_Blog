@@ -1,4 +1,5 @@
 import { useState } from "react"; //use state hook
+import BlogList from "./Bloglist";
 
 const Home = () => {
     const[blogs, setBlogs] = useState([  //list stored inside a use state
@@ -9,15 +10,8 @@ const Home = () => {
 
     return ( 
     <div className="Home">
-        {blogs.map((blog)=>( // map used to go through each item 
-            <div className="blog-preview" key={blog.id}> {/* unique key property*/}
-                <h2>{blog.title}</h2>  {/*displays the blog tittle */}
-                <p>Written by {blog.author}</p>
-                {/* <p>{blog.body}</p> */}
-            </div>
-        ))}
-       
-  
+       <BlogList blogsprop ={blogs} tittleprop="All Blogs!"/>
+       <BlogList blogsprop ={blogs.filter((blog) => blog.author === 'mario')} tittleprop="Mario's blogs Blogs!"/>
     </div> 
     );
 }
